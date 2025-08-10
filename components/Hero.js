@@ -93,7 +93,7 @@ export default function Hero() {
           variants={itemVariants}
           className="text-lg text-zinc-500 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Crafting intelligent solutions with cutting-edge web technologies and AI
+          Self-driven learner crafting intelligent solutions in AI and Cybersecurity
         </motion.p>
         
         <motion.div
@@ -103,7 +103,7 @@ export default function Hero() {
           {[
             { label: 'GitHub', href: 'https://github.com/evan-thoms' },
             { label: 'LinkedIn', href: 'https://linkedin.com/in/evan-thoms' },
-            { label: 'Resume', href: '#' }
+            { label: 'Resume', href: '/resume.pdf' }
           ].map((link, index) => (
             <motion.a
               key={link.label}
