@@ -1,7 +1,16 @@
 // components/Projects.js
 import { motion } from 'framer-motion'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const projects = [
+  
+  {
+    title: 'Sentinel',
+    description: 'Agentic vulnerability reporter that scans multilanguage sources for the latest and most critical vulnerabilities and cybersecurity news',
+    techs: ['Next.js', 'LangChain', 'PostgreSQL'],
+    github: '#',
+    demo: '#'
+  },
   {
     title: 'LumiFlash',
     description: 'AI-powered flashcard generator using Llama 3.1 LLM with RAG pipeline integration for PDF-based learning.',
@@ -16,17 +25,11 @@ const projects = [
     github: '#',
     demo: '#'
   }
-//   ,
-//   {
-//     title: 'Project Three',
-//     description: '[Placeholder for your third project - please provide details]',
-//     techs: ['React', 'Node.js', 'MongoDB'],
-//     github: '#',
-//     demo: '#'
-//   }
+
 ]
 
 export default function Projects() {
+  const { t } = useLanguage()
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-zinc-900 to-black">
       <div className="max-w-6xl mx-auto px-6">
@@ -36,7 +39,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#007AFF] to-[#0066CC] bg-clip-text text-transparent"
         >
-          Projects
+          {t('projects.title')}
         </motion.h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -74,7 +77,7 @@ export default function Projects() {
                   whileTap={{ scale: 0.95 }}
                   className="flex-1 text-center py-2 px-4 bg-gradient-to-r from-[#007AFF] to-[#0066CC] rounded-lg text-white font-medium hover:from-[#007AFF] hover:to-[#0066CC] transition-all duration-300"
                 >
-                  GitHub
+                  {t('projects.github')}
                 </motion.a>
                 <motion.a
                   href={project.demo}
@@ -82,7 +85,7 @@ export default function Projects() {
                   whileTap={{ scale: 0.95 }}
                   className="flex-1 text-center py-2 px-4 border border-[#007AFF] rounded-lg text-[#007AFF] hover:bg-[#007AFF]/20 hover:text-[#007AFF] transition-all duration-300"
                 >
-                  Demo
+                  {t('projects.demo')}
                 </motion.a>
               </div>
             </motion.div>

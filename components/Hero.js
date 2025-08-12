@@ -1,8 +1,10 @@
 // / components/Hero.js
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Hero() {
+  const { t } = useLanguage()
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
@@ -79,21 +81,21 @@ export default function Hero() {
           variants={itemVariants}
           className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent"
         >
-          Evan Thoms
+          {t('hero.title')}
         </motion.h1>
         
         <motion.p
           variants={itemVariants}
           className="text-xl md:text-2xl text-zinc-400 mb-4"
         >
-          Technical Intern at Leidos
+          {t('hero.subtitle')}
         </motion.p>
         
         <motion.p
           variants={itemVariants}
           className="text-lg text-zinc-500 mb-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Self-driven learner crafting intelligent solutions in AI and Cybersecurity
+          {t('hero.description')}
         </motion.p>
         
         <motion.div
@@ -101,9 +103,9 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
           {[
-            { label: 'GitHub', href: 'https://github.com/evan-thoms' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/evan-thoms' },
-            { label: 'Resume', href: '/resume.pdf' }
+            { label: t('hero.github'), href: 'https://github.com/evan-thoms' },
+            { label: t('hero.linkedin'), href: 'https://linkedin.com/in/evan-thoms' },
+            { label: t('hero.resume'), href: '/resume.pdf' }
           ].map((link, index) => (
             <motion.a
               key={link.label}

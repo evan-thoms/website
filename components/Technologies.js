@@ -1,5 +1,6 @@
 // components/Technologies.js
 import { motion } from 'framer-motion'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const techCategories = [
   {
@@ -17,6 +18,7 @@ const techCategories = [
 ]
 
 export default function Technologies() {
+  const { t } = useLanguage()
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -45,7 +47,7 @@ export default function Technologies() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#007AFF] to-[#0066CC] bg-clip-text text-transparent"
         >
-          Technologies
+          {t('technologies.title')}
         </motion.h2>
 
         <motion.div

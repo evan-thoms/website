@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import Technologies from '../components/Technologies'
 import Experience from '../components/Experience'
 import Projects from '../components/Projects'
+import Skills from '../components/Skills'
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
@@ -32,6 +33,7 @@ export default function Home() {
       <Technologies />
       <Experience />
       <Projects />
+      <Skills />
     </div>
   )
 }

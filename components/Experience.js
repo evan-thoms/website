@@ -1,28 +1,30 @@
 // components/Experience.js
 import { motion } from 'framer-motion'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const experiences = [
   {
-    title: 'Technical Intern',
-    company: 'Leidos',
+    titleKey: 'experience.intern',
+    companyKey: 'experience.leidos',
     date: 'May 2025 – Present',
-    description: 'Automation and end-user testing for Navy-Marine Corps Intranet'
+    descriptionKey: 'experience.internDesc'
   },
   {
-    title: 'Software Engineering Fellow',
-    company: 'HeadstarterAI Fellowship',
+    titleKey: 'experience.fellow',
+    companyKey: 'experience.headstarter',
     date: 'July 2024 – Sept 2024',
-    description: 'Built and deployed 5 AI projects in 7 weeks using React JS, Next.js, Firebase, Clerk, and Vercel. Developed interactive customer support agents and AI-powered applications.'
+    descriptionKey: 'experience.fellowDesc'
   },
   {
-    title: 'Full Stack Web Developer',
-    company: 'dimensionEd',
+    titleKey: 'experience.developer',
+    companyKey: 'experience.dimensionEd',
     date: 'March 2022 – June 2022',
-    description: 'Frontend development using Vue.js and React.js, configured Stripe payment system, and managed user authentication with OAuth and Firebase.'
+    descriptionKey: 'experience.developerDesc'
   }
 ]
 
 export default function Experience() {
+  const { t } = useLanguage()
   return (
     <section id="experience" className="py-20 bg-zinc-900">
       <div className="max-w-4xl mx-auto px-6">
@@ -32,7 +34,7 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-[#007AFF] to-[#0066CC] bg-clip-text text-transparent"
         >
-          Experience
+          {t('experience.title')}
         </motion.h2>
 
         <div className="space-y-8">
@@ -48,15 +50,15 @@ export default function Experience() {
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-semibold text-white group-hover:text-[#007AFF] transition-colors duration-300">
-                    {exp.title}
+                    {t(exp.titleKey)}
                   </h3>
-                  <p className="text-[#007AFF] font-medium mt-1">{exp.company}</p>
+                  <p className="text-[#007AFF] font-medium mt-1">{t(exp.companyKey)}</p>
                 </div>
                 <span className="text-zinc-400 text-sm mt-2 md:mt-0 whitespace-nowrap">
                   {exp.date}
                 </span>
               </div>
-              <p className="text-zinc-300 leading-relaxed">{exp.description}</p>
+              <p className="text-zinc-300 leading-relaxed">{t(exp.descriptionKey)}</p>
             </motion.div>
           ))}
         </div>

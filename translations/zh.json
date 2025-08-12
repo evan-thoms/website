@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "about": "关于",
+    "tech": "技术",
+    "experience": "经验",
+    "projects": "项目",
+    "skills": "技能"
+  },
+  "hero": {
+    "title": "埃文·汤姆斯",
+    "subtitle": "Leidos技术实习生",
+    "description": "自主学习者在人工智能和网络安全领域打造智能解决方案",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "简历"
+  },
+  "technologies": {
+    "title": "技术",
+    "description": "我使用的技术和工具"
+  },
+  "experience": {
+    "title": "经验",
+    "description": "我的职业历程",
+    "intern": "技术实习生",
+    "fellow": "软件工程研究员",
+    "developer": "全栈网络开发员",
+    "leidos": "Leidos",
+    "headstarter": "HeadstarterAI奖学金",
+    "dimensionEd": "dimensionEd",
+    "internDesc": "为海军陆战队内网进行自动化和终端用户测试",
+    "fellowDesc": "使用React JS、Next.js、Firebase、Clerk和Vercel在7周内构建并部署了5个AI项目。开发了交互式客户支持代理和AI驱动的应用程序。",
+    "developerDesc": "使用Vue.js和React.js进行前端开发，配置Stripe支付系统，并使用OAuth和Firebase管理用户认证。"
+  },
+  "projects": {
+    "title": "项目",
+    "description": "我最近的一些作品",
+    "github": "GitHub",
+    "demo": "演示"
+  },
+  "skills": {
+    "title": "技能与认证",
+    "description": "我的技能、奖项和认证",
+    "languages": "语言",
+    "certificationsAndAwards": "认证与奖项",
+    "proficient": "熟练",
+    "intermediate": "中等",
+    "beginner": "初级",
+    "Native": "母语",
+    "B1": "B1",
+    "A2": "A2",
+    "A1": "A1"
+  }
+}

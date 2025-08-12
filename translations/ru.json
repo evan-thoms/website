@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "about": "обо мне",
+    "tech": "технологии",
+    "experience": "опыт",
+    "projects": "проекты",
+    "skills": "навыки"
+  },
+  "hero": {
+    "title": "Эван Томс",
+    "subtitle": "Технический стажер в Leidos",
+    "description": "Самостоятельный ученик, создающий интеллектуальные решения в области ИИ и кибербезопасности",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "Резюме"
+  },
+  "technologies": {
+    "title": "Технологии",
+    "description": "Технологии и инструменты, с которыми я работаю"
+  },
+  "experience": {
+    "title": "Опыт",
+    "description": "Мой профессиональный путь",
+    "intern": "Технический стажер",
+    "fellow": "Стипендиат по разработке программного обеспечения",
+    "developer": "Full Stack веб-разработчик",
+    "leidos": "Leidos",
+    "headstarter": "Стипендия HeadstarterAI",
+    "dimensionEd": "dimensionEd",
+    "internDesc": "Автоматизация и тестирование конечных пользователей для интранета ВМС-Корпуса морской пехоты",
+    "fellowDesc": "Создал и развернул 5 проектов ИИ за 7 недель, используя React JS, Next.js, Firebase, Clerk и Vercel. Разработал интерактивных агентов поддержки клиентов и приложения на базе ИИ.",
+    "developerDesc": "Frontend разработка с использованием Vue.js и React.js, настроил платежную систему Stripe и управлял аутентификацией пользователей с OAuth и Firebase."
+  },
+  "projects": {
+    "title": "Проекты",
+    "description": "Некоторые из моих последних работ",
+    "github": "GitHub",
+    "demo": "Демо"
+  },
+  "skills": {
+    "title": "Навыки и Сертификаты",
+    "description": "Мои навыки, награды и сертификаты",
+    "languages": "Языки",
+    "certificationsAndAwards": "Сертификаты и Награды",
+    "proficient": "Свободно",
+    "intermediate": "Средний",
+    "beginner": "Начинающий",
+    "Native": "Родной",
+    "B1": "B1",
+    "A2": "A2",
+    "A1": "A1"
+  }
+}

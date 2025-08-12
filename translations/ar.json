@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "about": "حول",
+    "tech": "التقنيات",
+    "experience": "الخبرة",
+    "projects": "المشاريع",
+    "skills": "المهارات"
+  },
+  "hero": {
+    "title": "إيفان تومس",
+    "subtitle": "متدرب تقني في Leidos",
+    "description": "متعلم ذاتي يصنع حلولاً ذكية في الذكاء الاصطناعي وأمن المعلومات",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "السيرة الذاتية"
+  },
+  "technologies": {
+    "title": "التقنيات",
+    "description": "التقنيات والأدوات التي أعمل بها"
+  },
+  "experience": {
+    "title": "الخبرة",
+    "description": "رحلتي المهنية",
+    "intern": "متدرب تقني",
+    "fellow": "زميل هندسة البرمجيات",
+    "developer": "مطور ويب شامل",
+    "leidos": "Leidos",
+    "headstarter": "زمالة HeadstarterAI",
+    "dimensionEd": "dimensionEd",
+    "internDesc": "أتمتة واختبار المستخدم النهائي للإنترانت البحري-مشاة البحرية",
+    "fellowDesc": "بنيت ونشرت 5 مشاريع ذكاء اصطناعي في 7 أسابيع باستخدام React JS وNext.js وFirebase وClerk وVercel. طورت وكلاء دعم العملاء التفاعليين والتطبيقات المدعومة بالذكاء الاصطناعي.",
+    "developerDesc": "تطوير الواجهة الأمامية باستخدام Vue.js وReact.js، وتكوين نظام الدفع Stripe، وإدارة مصادقة المستخدمين باستخدام OAuth وFirebase."
+  },
+  "projects": {
+    "title": "المشاريع",
+    "description": "بعض أعمالي الحديثة",
+    "github": "GitHub",
+    "demo": "عرض تجريبي"
+  },
+  "skills": {
+    "title": "المهارات والشهادات",
+    "description": "مهاراتي وجوائزي وشهاداتي",
+    "languages": "اللغات",
+    "certificationsAndAwards": "الشهادات والجوائز",
+    "proficient": "متقدم",
+    "intermediate": "متوسط",
+    "beginner": "مبتدئ",
+    "Native": "لغة أم",
+    "B1": "B1",
+    "A2": "A2",
+    "A1": "A1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "about": "sobre mí",
+    "tech": "tecnologías",
+    "experience": "experiencia",
+    "projects": "proyectos",
+    "skills": "habilidades"
+  },
+  "hero": {
+    "title": "Evan Thoms",
+    "subtitle": "Pasante Técnico en Leidos",
+    "description": "Aprendiz autodirigido creando soluciones inteligentes en IA y Ciberseguridad",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "CV"
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "description": "Tecnologías y herramientas con las que trabajo"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "description": "Mi trayectoria profesional",
+    "intern": "Pasante Técnico",
+    "fellow": "Becario de Ingeniería de Software",
+    "developer": "Desarrollador Web Full Stack",
+    "leidos": "Leidos",
+    "headstarter": "Beca HeadstarterAI",
+    "dimensionEd": "dimensionEd",
+    "internDesc": "Automatización y pruebas de usuario final para la Intranet de la Marina-Cuerpo de Marines",
+    "fellowDesc": "Construí e implementé 5 proyectos de IA en 7 semanas usando React JS, Next.js, Firebase, Clerk y Vercel. Desarrollé agentes de soporte al cliente interactivos y aplicaciones impulsadas por IA.",
+    "developerDesc": "Desarrollo frontend usando Vue.js y React.js, configuré el sistema de pagos Stripe y gestioné la autenticación de usuarios con OAuth y Firebase."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Algunos de mis trabajos recientes",
+    "github": "GitHub",
+    "demo": "Demo"
+  },
+  "skills": {
+    "title": "Habilidades y Certificaciones",
+    "description": "Mis habilidades, premios y certificaciones",
+    "languages": "Idiomas",
+    "certificationsAndAwards": "Certificaciones y Premios",
+    "proficient": "Competente",
+    "intermediate": "Intermedio",
+    "beginner": "Principiante",
+    "Native": "Nativo",
+    "B1": "B1",
+    "A2": "A2",
+    "A1": "A1"
+  }
+}

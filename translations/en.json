@@ -1,0 +1,53 @@
+{
+  "navbar": {
+    "about": "about",
+    "tech": "tech",
+    "experience": "experience",
+    "projects": "projects",
+    "skills": "skills"
+  },
+  "hero": {
+    "title": "Evan Thoms",
+    "subtitle": "Technical Intern at Leidos",
+    "description": "Self-driven learner crafting intelligent solutions in AI and Cybersecurity",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "Resume"
+  },
+  "technologies": {
+    "title": "Technologies",
+    "description": "Technologies and tools I work with"
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "My professional journey",
+    "intern": "Technical Intern",
+    "fellow": "Software Engineering Fellow",
+    "developer": "Full Stack Web Developer",
+    "leidos": "Leidos",
+    "headstarter": "HeadstarterAI Fellowship",
+    "dimensionEd": "dimensionEd",
+    "internDesc": "Automation and end-user testing for Navy-Marine Corps Intranet",
+    "fellowDesc": "Built and deployed 5 AI projects in 7 weeks using React JS, Next.js, Firebase, Clerk, and Vercel. Developed interactive customer support agents and AI-powered applications.",
+    "developerDesc": "Frontend development using Vue.js and React.js, configured Stripe payment system, and managed user authentication with OAuth and Firebase."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Some of my recent work",
+    "github": "GitHub",
+    "demo": "Demo"
+  },
+  "skills": {
+    "title": "Skills & Certifications",
+    "description": "My skills, awards, and certifications",
+    "languages": "Languages",
+    "certificationsAndAwards": "Certifications & Awards",
+    "proficient": "Proficient",
+    "intermediate": "Intermediate",
+    "beginner": "Beginner",
+    "Native": "Native",
+    "B1": "B1",
+    "A2": "A2",
+    "A1": "A1"
+  }
+}

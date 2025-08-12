@@ -1,6 +1,7 @@
 // components/Navbar.js
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const languages = {
   en: 'EN',
@@ -12,8 +13,8 @@ const languages = {
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [currentLang, setCurrentLang] = useState('en')
   const [showLangDropdown, setShowLangDropdown] = useState(false)
+  const { currentLanguage, changeLanguage, t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +49,7 @@ export default function Navbar() {
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
-            {['about', 'tech', 'experience', 'projects'].map((item) => (
+            {['about', 'tech', 'experience', 'projects', 'skills'].map((item) => (
               <motion.button
                 key={item}
                 whileHover={{ y: -2 }}
@@ -56,7 +57,7 @@ export default function Navbar() {
                 onClick={() => scrollToSection(item)}
                 className="text-zinc-300 hover:text-white transition-colors duration-300 capitalize relative group"
               >
-                {item}
+                {t(`navbar.${item}`)}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#007AFF] to-[#0066CC] group-hover:w-full transition-all duration-300"></span>
               </motion.button>
             ))}
@@ -67,7 +68,7 @@ export default function Navbar() {
                 onClick={() => setShowLangDropdown(!showLangDropdown)}
                 className="px-3 py-1 border border-zinc-700 rounded-lg text-zinc-300 hover:border-[#007AFF] transition-colors duration-300"
               >
-                {languages[currentLang]}
+                {languages[currentLanguage]}
               </motion.button>
               
               {showLangDropdown && (
@@ -81,7 +82,7 @@ export default function Navbar() {
                     <button
                       key={code}
                       onClick={() => {
-                        setCurrentLang(code)
+                        changeLanguage(code)
                         setShowLangDropdown(false)
                       }}
                       className="block w-full px-4 py-2 text-left text-zinc-300 hover:bg-[#007AFF]/20 hover:text-white transition-colors duration-200"
