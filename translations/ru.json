@@ -16,7 +16,10 @@
   },
   "technologies": {
     "title": "Технологии",
-    "description": "Технологии и инструменты, с которыми я работаю"
+    "description": "Технологии и инструменты, с которыми я работаю",
+    "frontend": "Фронтенд",
+    "backendAI": "Бэкенд и ИИ",
+    "toolsOther": "Инструменты и Другое"
   },
   "experience": {
     "title": "Опыт",
@@ -35,7 +38,19 @@
     "title": "Проекты",
     "description": "Некоторые из моих последних работ",
     "github": "GitHub",
-    "demo": "Демо"
+    "demo": "Демо",
+    "sentinel": {
+      "title": "Sentinel",
+      "description": "Агентный репортер уязвимостей, который сканирует многоязычные источники для поиска последних и наиболее критичных уязвимостей и новостей кибербезопасности"
+    },
+    "lumiFlash": {
+      "title": "LumiFlash",
+      "description": "Генератор флеш-карт на основе ИИ с использованием Llama 3.1 LLM с интеграцией RAG-конвейера для обучения на основе PDF."
+    },
+    "profAI": {
+      "title": "ProfAI",
+      "description": "Интерактивный чат-бот, который собирает данные с Rate My Professor, чтобы помочь студентам принимать обоснованные решения о курсах."
+    }
   },
   "skills": {
     "title": "Навыки и Сертификаты",
@@ -49,5 +64,49 @@
     "B1": "B1",
     "A2": "A2",
     "A1": "A1"
+  },
+  "dates": {
+    "january": "Январь",
+    "february": "Февраль",
+    "march": "Март",
+    "april": "Апрель",
+    "may": "Май",
+    "june": "Июнь",
+    "july": "Июль",
+    "august": "Август",
+    "september": "Сентябрь",
+    "october": "Октябрь",
+    "november": "Ноябрь",
+    "december": "Декабрь",
+    "present": "Настоящее время"
+  },
+  "languageNames": {
+    "english": "Английский",
+    "spanish": "Испанский",
+    "russian": "Русский",
+    "chinese": "Китайский",
+    "egyptianArabic": "Египетский арабский"
+  },
+  "certifications": {
+    "securityPlus": "Security+",
+    "eagleScout": "Eagle Scout",
+    "nationalMeritScholar": "Финалист Национальной стипендии за заслуги",
+    "comptia": "CompTIA",
+    "boyScouts": "Бой-скауты Америки",
+    "nationalMeritCorp": "Корпорация Национальных стипендий за заслуги"
+  },
+  "languageSelector": {
+    "hint": "Язык",
+    "welcomeTitle": "Добро пожаловать!",
+    "welcomeMessage": "Этот веб-сайт доступен на нескольких языках. Вы можете сменить язык в любое время, используя селектор языка в панели навигации.",
+    "availableLanguages": "Доступные языки:",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "العربية",
+    "russian": "Русский",
+    "chinese": "中文",
+    "continueInEnglish": "Продолжить на русском",
+    "chooseLanguage": "Выбрать язык",
+    "dismiss": "Закрыть"
   }
 }

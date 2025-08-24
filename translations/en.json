@@ -16,7 +16,10 @@
   },
   "technologies": {
     "title": "Technologies",
-    "description": "Technologies and tools I work with"
+    "description": "Technologies and tools I work with",
+    "frontend": "Frontend",
+    "backendAI": "Backend & AI",
+    "toolsOther": "Tools & Other"
   },
   "experience": {
     "title": "Experience",
@@ -35,7 +38,19 @@
     "title": "Projects",
     "description": "Some of my recent work",
     "github": "GitHub",
-    "demo": "Demo"
+    "demo": "Demo",
+    "sentinel": {
+      "title": "Sentinel",
+      "description": "Agentic vulnerability reporter that scans multilanguage sources for the latest and most critical vulnerabilities and cybersecurity news"
+    },
+    "lumiFlash": {
+      "title": "LumiFlash",
+      "description": "AI-powered flashcard generator using Llama 3.1 LLM with RAG pipeline integration for PDF-based learning."
+    },
+    "profAI": {
+      "title": "ProfAI",
+      "description": "Interactive chatbot that scrapes Rate My Professor data to help students make informed course decisions."
+    }
   },
   "skills": {
     "title": "Skills & Certifications",
@@ -49,5 +64,49 @@
     "B1": "B1",
     "A2": "A2",
     "A1": "A1"
+  },
+  "dates": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December",
+    "present": "Present"
+  },
+  "languageNames": {
+    "english": "English",
+    "spanish": "Spanish",
+    "russian": "Russian",
+    "chinese": "Chinese",
+    "egyptianArabic": "Egyptian Arabic"
+  },
+  "certifications": {
+    "securityPlus": "Security+",
+    "eagleScout": "Eagle Scout",
+    "nationalMeritScholar": "National Merit Scholar Finalist",
+    "comptia": "CompTIA",
+    "boyScouts": "Boy Scouts of America",
+    "nationalMeritCorp": "National Merit Scholarship Corporation"
+  },
+  "languageSelector": {
+    "hint": "Language",
+    "welcomeTitle": "Welcome!",
+    "welcomeMessage": "This website is available in multiple languages. You can change the language anytime using the language selector in the navigation bar.",
+    "availableLanguages": "Available languages:",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "العربية",
+    "russian": "Русский",
+    "chinese": "中文",
+    "continueInEnglish": "Continue in English",
+    "chooseLanguage": "Choose Language",
+    "dismiss": "Dismiss"
   }
 }

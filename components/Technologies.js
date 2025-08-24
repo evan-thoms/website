@@ -4,15 +4,15 @@ import { useLanguage } from '../contexts/LanguageContext'
 
 const techCategories = [
   {
-    title: 'Frontend',
+    titleKey: 'technologies.frontend',
     techs: ['JavaScript', 'React.js', 'Next.js', 'Tailwind CSS']
   },
   {
-    title: 'Backend & AI',
+    titleKey: 'technologies.backendAI',
     techs: ['Python', 'OpenAI GPT-4', 'LangChain', 'Pinecone']
   },
   {
-    title: 'Tools & Other',
+    titleKey: 'technologies.toolsOther',
     techs: ['Git/GitHub', 'Firebase', 'Numpy', 'Pandas']
   }
 ]
@@ -65,7 +65,7 @@ export default function Technologies() {
               className="group p-8 bg-gradient-to-br from-zinc-900/50 to-zinc-800/30 rounded-2xl border border-zinc-700/50 backdrop-blur-sm hover:border-[#007AFF]/30 transition-all duration-300"
             >
               <h3 className="text-xl font-semibold mb-6 text-[#007AFF] group-hover:text-[#007AFF] transition-colors duration-300">
-                {category.title}
+                {t(category.titleKey)}
               </h3>
               <div className="flex flex-wrap gap-3">
                 {category.techs.map((tech, techIndex) => (

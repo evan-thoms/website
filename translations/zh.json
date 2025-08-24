@@ -16,7 +16,10 @@
   },
   "technologies": {
     "title": "技术",
-    "description": "我使用的技术和工具"
+    "description": "我使用的技术和工具",
+    "frontend": "前端",
+    "backendAI": "后端与人工智能",
+    "toolsOther": "工具与其他"
   },
   "experience": {
     "title": "经验",
@@ -35,7 +38,19 @@
     "title": "项目",
     "description": "我最近的一些作品",
     "github": "GitHub",
-    "demo": "演示"
+    "demo": "演示",
+    "sentinel": {
+      "title": "Sentinel",
+      "description": "代理漏洞报告器，扫描多语言源以获取最新和最关键的漏洞和网络安全新闻"
+    },
+    "lumiFlash": {
+      "title": "LumiFlash",
+      "description": "使用 Llama 3.1 LLM 的 AI 驱动闪卡生成器，集成 RAG 管道以实现基于 PDF 的学习。"
+    },
+    "profAI": {
+      "title": "ProfAI",
+      "description": "交互式聊天机器人，抓取 Rate My Professor 数据以帮助学生做出明智的课程决定。"
+    }
   },
   "skills": {
     "title": "技能与认证",
@@ -49,5 +64,49 @@
     "B1": "B1",
     "A2": "A2",
     "A1": "A1"
+  },
+  "dates": {
+    "january": "一月",
+    "february": "二月",
+    "march": "三月",
+    "april": "四月",
+    "may": "五月",
+    "june": "六月",
+    "july": "七月",
+    "august": "八月",
+    "september": "九月",
+    "october": "十月",
+    "november": "十一月",
+    "december": "十二月",
+    "present": "现在"
+  },
+  "languageNames": {
+    "english": "英语",
+    "spanish": "西班牙语",
+    "russian": "俄语",
+    "chinese": "中文",
+    "egyptianArabic": "埃及阿拉伯语"
+  },
+  "certifications": {
+    "securityPlus": "Security+",
+    "eagleScout": "Eagle Scout",
+    "nationalMeritScholar": "国家优秀奖学金决赛入围者",
+    "comptia": "CompTIA",
+    "boyScouts": "美国童子军",
+    "nationalMeritCorp": "国家优秀奖学金公司"
+  },
+  "languageSelector": {
+    "hint": "语言",
+    "welcomeTitle": "欢迎!",
+    "welcomeMessage": "该网站支持多种语言。您可以随时使用导航栏中的语言选择器更改语言。",
+    "availableLanguages": "可用语言：",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "العربية",
+    "russian": "Русский",
+    "chinese": "中文",
+    "continueInEnglish": "继续使用中文",
+    "chooseLanguage": "选择语言",
+    "dismiss": "关闭"
   }
 }

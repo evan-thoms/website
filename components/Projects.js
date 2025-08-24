@@ -3,29 +3,27 @@ import { motion } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
 
 const projects = [
-  
   {
-    title: 'Sentinel',
-    description: 'Agentic vulnerability reporter that scans multilanguage sources for the latest and most critical vulnerabilities and cybersecurity news',
+    titleKey: 'projects.sentinel.title',
+    descriptionKey: 'projects.sentinel.description',
     techs: ['Next.js', 'LangChain', 'PostgreSQL'],
-    github: '#',
+    github: 'https://github.com/evan-thoms/vuln_feed',
     demo: '#'
   },
   {
-    title: 'LumiFlash',
-    description: 'AI-powered flashcard generator using Llama 3.1 LLM with RAG pipeline integration for PDF-based learning.',
+    titleKey: 'projects.lumiFlash.title',
+    descriptionKey: 'projects.lumiFlash.description',
     techs: ['Next.js', 'Llama 3.1', 'LangChain', 'Pinecone', 'Stripe'],
-    github: '#',
+    github: 'https://github.com/HalaBench/AI-Flashcards-Stripe',
     demo: '#'
   },
   {
-    title: 'ProfAI',
-    description: 'Interactive chatbot that scrapes Rate My Professor data to help students make informed course decisions.',
+    titleKey: 'projects.profAI.title',
+    descriptionKey: 'projects.profAI.description',
     techs: ['Next.js', 'Puppeteer', 'Pinecone', 'Material UI'],
     github: '#',
     demo: '#'
   }
-
 ]
 
 export default function Projects() {
@@ -53,10 +51,10 @@ export default function Projects() {
               className="group p-6 bg-gradient-to-br from-zinc-800/40 to-zinc-900/60 rounded-2xl border border-zinc-700/50 hover:border-[#007AFF]/30 transition-all duration-300 backdrop-blur-sm"
             >
               <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-[#007AFF] transition-colors duration-300">
-                {project.title}
+                {t(project.titleKey)}
               </h3>
               <p className="text-zinc-400 mb-6 leading-relaxed">
-                {project.description}
+                {t(project.descriptionKey)}
               </p>
               
               <div className="flex flex-wrap gap-2 mb-6">

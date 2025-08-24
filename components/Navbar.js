@@ -20,8 +20,21 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
+    
+    const handleClickOutside = (event) => {
+      // Close dropdown when clicking outside
+      if (!event.target.closest('.language-dropdown')) {
+        setShowLangDropdown(false)
+      }
+    }
+    
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    document.addEventListener('click', handleClickOutside)
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      document.removeEventListener('click', handleClickOutside)
+    }
   }, [])
 
   const scrollToSection = (sectionId) => {
@@ -62,26 +75,43 @@ export default function Navbar() {
               </motion.button>
             ))}
             
-            <div className="relative">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                onClick={() => setShowLangDropdown(!showLangDropdown)}
-                className="px-3 py-1 border border-zinc-700 rounded-lg text-zinc-300 hover:border-[#007AFF] transition-colors duration-300"
-              >
-                {languages[currentLanguage]}
-              </motion.button>
+            <div className="relative language-dropdown">
+              <motion.div className="group relative">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  onClick={() => setShowLangDropdown(!showLangDropdown)}
+                  className="px-3 py-1 border border-zinc-700 rounded-lg text-zinc-300 hover:border-[#007AFF] transition-colors duration-300 relative"
+                >
+                  {languages[currentLanguage]}
+                  
+                  {/* Small language indicator */}
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="absolute -top-1 -right-1 w-2 h-2 bg-gradient-to-r from-[#007AFF] to-[#0066CC] rounded-full"
+                  />
+                </motion.button>
+                
+                {/* Tooltip - positioned dynamically based on scroll */}
+                <div className={`absolute left-1/2 transform -translate-x-1/2 bg-zinc-800/90 backdrop-blur-sm text-zinc-300 text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none z-50 ${
+                  isScrolled ? '-top-8' : 'top-full mt-2'
+                }`}>
+                  {t('languageSelector.hint')}
+                </div>
+              </motion.div>
               
               {showLangDropdown && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  className="absolute top-full right-0 mt-2 bg-zinc-900/95 backdrop-blur-xl border border-zinc-700 rounded-lg overflow-hidden"
+                  className="absolute top-full right-0 mt-2 bg-zinc-900/95 backdrop-blur-xl border border-zinc-700 rounded-lg overflow-hidden z-50 min-w-[80px]"
                 >
                   {Object.entries(languages).map(([code, label]) => (
                     <button
                       key={code}
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.stopPropagation()
                         changeLanguage(code)
                         setShowLangDropdown(false)
                       }}

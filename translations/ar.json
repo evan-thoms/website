@@ -16,7 +16,10 @@
   },
   "technologies": {
     "title": "التقنيات",
-    "description": "التقنيات والأدوات التي أعمل بها"
+    "description": "التقنيات والأدوات التي أعمل بها",
+    "frontend": "الواجهة الأمامية",
+    "backendAI": "الخلفية والذكاء الاصطناعي",
+    "toolsOther": "الأدوات وأخرى"
   },
   "experience": {
     "title": "الخبرة",
@@ -35,7 +38,19 @@
     "title": "المشاريع",
     "description": "بعض أعمالي الحديثة",
     "github": "GitHub",
-    "demo": "عرض تجريبي"
+    "demo": "عرض تجريبي",
+    "sentinel": {
+      "title": "Sentinel",
+      "description": "مراسل الثغرات الأمنية الذكي الذي يفحص مصادر متعددة اللغات للعثور على أحدث وأهم الثغرات الأمنية وأخبار أمن المعلومات"
+    },
+    "lumiFlash": {
+      "title": "LumiFlash",
+      "description": "مولد بطاقات تعليمية مدعوم بالذكاء الاصطناعي باعتماد Llama 3.1 LLM مع تكامل راج للتعلم المبني على ملفات PDF."
+    },
+    "profAI": {
+      "title": "ProfAI",
+      "description": "روبوت محادثة تفاعلي يستخلص بيانات من Rate My Professor لمساعدة الطلاب في اتخاذ قرارات مدروسة بشأن المقررات."
+    }
   },
   "skills": {
     "title": "المهارات والشهادات",
@@ -49,5 +64,49 @@
     "B1": "B1",
     "A2": "A2",
     "A1": "A1"
+  },
+  "dates": {
+    "january": "يناير",
+    "february": "فبراير",
+    "march": "مارس",
+    "april": "أبريل",
+    "may": "مايو",
+    "june": "يونيو",
+    "july": "يوليو",
+    "august": "أغسطس",
+    "september": "سبتمبر",
+    "october": "أكتوبر",
+    "november": "نوفمبر",
+    "december": "ديسمبر",
+    "present": "الحاضر"
+  },
+  "languageNames": {
+    "english": "الإنجليزية",
+    "spanish": "الإسبانية",
+    "russian": "الروسية",
+    "chinese": "الصينية",
+    "egyptianArabic": "العربية المصرية"
+  },
+  "certifications": {
+    "securityPlus": "Security+",
+    "eagleScout": "Eagle Scout",
+    "nationalMeritScholar": "نهائي جائزة الاستحقاق الوطني",
+    "comptia": "CompTIA",
+    "boyScouts": "كشافة أمريكا",
+    "nationalMeritCorp": "مؤسسة منح الاستحقاق الوطني"
+  },
+  "languageSelector": {
+    "hint": "اللغة",
+    "welcomeTitle": "مرحباً!",
+    "welcomeMessage": "هذا المоقع متاح بعدة لغات. يمكنك تغيير اللغة في أي وقت باستخدام محدد اللغة في شريط التنقل.",
+    "availableLanguages": "اللغات المتاحة:",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "العربية",
+    "russian": "Русский",
+    "chinese": "中文",
+    "continueInEnglish": "متابعة بالعربية",
+    "chooseLanguage": "اختر اللغة",
+    "dismiss": "إغلاق"
   }
 }

@@ -2,6 +2,34 @@
 import { motion } from 'framer-motion'
 import { useLanguage } from '../contexts/LanguageContext'
 
+// Helper function to translate dates
+const translateDate = (dateString, t) => {
+  if (!dateString) return dateString
+  
+  const monthMap = {
+    'January': 'january', 'February': 'february', 'March': 'march',
+    'April': 'april', 'May': 'may', 'June': 'june',
+    'July': 'july', 'August': 'august', 'September': 'september',
+    'October': 'october', 'November': 'november', 'December': 'december'
+  }
+  
+  let translatedDate = dateString
+  
+  // Replace month names
+  Object.keys(monthMap).forEach(month => {
+    if (translatedDate.includes(month)) {
+      translatedDate = translatedDate.replace(month, t(`dates.${monthMap[month]}`))
+    }
+  })
+  
+  // Replace "Present"
+  if (translatedDate.includes('Present')) {
+    translatedDate = translatedDate.replace('Present', t('dates.present'))
+  }
+  
+  return translatedDate
+}
+
 const experiences = [
   {
     titleKey: 'experience.intern',
@@ -55,7 +83,7 @@ export default function Experience() {
                   <p className="text-[#007AFF] font-medium mt-1">{t(exp.companyKey)}</p>
                 </div>
                 <span className="text-zinc-400 text-sm mt-2 md:mt-0 whitespace-nowrap">
-                  {exp.date}
+                  {translateDate(exp.date, t)}
                 </span>
               </div>
               <p className="text-zinc-300 leading-relaxed">{t(exp.descriptionKey)}</p>

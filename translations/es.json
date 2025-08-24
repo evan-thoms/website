@@ -16,7 +16,10 @@
   },
   "technologies": {
     "title": "Tecnologías",
-    "description": "Tecnologías y herramientas con las que trabajo"
+    "description": "Tecnologías y herramientas con las que trabajo",
+    "frontend": "Frontend",
+    "backendAI": "Backend e IA",
+    "toolsOther": "Herramientas y Otros"
   },
   "experience": {
     "title": "Experiencia",
@@ -35,7 +38,19 @@
     "title": "Proyectos",
     "description": "Algunos de mis trabajos recientes",
     "github": "GitHub",
-    "demo": "Demo"
+    "demo": "Demo",
+    "sentinel": {
+      "title": "Sentinel",
+      "description": "Reportero agéntico de vulnerabilidades que escanea fuentes multiidioma en busca de las vulnerabilidades más recientes y críticas y noticias de ciberseguridad"
+    },
+    "lumiFlash": {
+      "title": "LumiFlash",
+      "description": "Generador de tarjetas de memoria con IA usando Llama 3.1 LLM con integración de pipeline RAG para aprendizaje basado en PDF."
+    },
+    "profAI": {
+      "title": "ProfAI",
+      "description": "Chatbot interactivo que extrae datos de Rate My Professor para ayudar a los estudiantes a tomar decisiones informadas sobre cursos."
+    }
   },
   "skills": {
     "title": "Habilidades y Certificaciones",
@@ -49,5 +64,49 @@
     "B1": "B1",
     "A2": "A2",
     "A1": "A1"
+  },
+  "dates": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio",
+    "july": "Julio",
+    "august": "Agosto",
+    "september": "Septiembre",
+    "october": "Octubre",
+    "november": "Noviembre",
+    "december": "Diciembre",
+    "present": "Presente"
+  },
+  "languageNames": {
+    "english": "Inglés",
+    "spanish": "Español",
+    "russian": "Ruso",
+    "chinese": "Chino",
+    "egyptianArabic": "Árabe Egipcio"
+  },
+  "certifications": {
+    "securityPlus": "Security+",
+    "eagleScout": "Eagle Scout",
+    "nationalMeritScholar": "Finalista Nacional de Mérito Académico",
+    "comptia": "CompTIA",
+    "boyScouts": "Boy Scouts de América",
+    "nationalMeritCorp": "Corporación Nacional de Becas de Mérito"
+  },
+  "languageSelector": {
+    "hint": "Idioma",
+    "welcomeTitle": "¡Bienvenido!",
+    "welcomeMessage": "Este sitio web está disponible en varios idiomas. Puedes cambiar el idioma en cualquier momento usando el selector de idioma en la barra de navegación.",
+    "availableLanguages": "Idiomas disponibles:",
+    "english": "English",
+    "spanish": "Español",
+    "arabic": "العربية",
+    "russian": "Русский",
+    "chinese": "中文",
+    "continueInEnglish": "Continuar en Español",
+    "chooseLanguage": "Elegir Idioma",
+    "dismiss": "Cerrar"
   }
 }

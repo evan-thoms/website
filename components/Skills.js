@@ -4,16 +4,16 @@ import { useLanguage } from '../contexts/LanguageContext'
 
 const skillsData = {
   languages: [
-    { name: 'English', level: 'Native' },
-    { name: 'Spanish', level: 'B1' },
-    { name: 'Russian', level: 'B1' },
-    { name: 'Chinese', level: 'A2' },
-    { name: 'Egyptian Arabic', level: 'A1' }
+    { nameKey: 'languageNames.english', level: 'Native' },
+    { nameKey: 'languageNames.spanish', level: 'B1' },
+    { nameKey: 'languageNames.russian', level: 'B1' },
+    { nameKey: 'languageNames.chinese', level: 'A2' },
+    { nameKey: 'languageNames.egyptianArabic', level: 'A1' }
   ],
   certificationsAndAwards: [
-    { name: 'Security+', issuer: 'CompTIA', date: '2022', type: 'certification' },
-    { name: 'Eagle Scout', issuer: 'Boy Scouts of America', date: '2023', type: 'award' },
-    { name: 'National Merit Scholar Finalist', issuer: 'National Merit Scholarship Corporation', date: '2023', type: 'award' }
+    { nameKey: 'certifications.securityPlus', issuerKey: 'certifications.comptia', date: '2022', type: 'certification' },
+    { nameKey: 'certifications.eagleScout', issuerKey: 'certifications.boyScouts', date: '2023', type: 'award' },
+    { nameKey: 'certifications.nationalMeritScholar', issuerKey: 'certifications.nationalMeritCorp', date: '2023', type: 'award' }
   ]
 }
 
@@ -92,10 +92,10 @@ export default function Skills() {
                   className="p-4 bg-zinc-800/50 rounded-lg border border-zinc-700/50 hover:border-[#007AFF]/30 transition-all duration-300"
                 >
                   <div className="flex items-start justify-between mb-2">
-                    <h4 className="text-zinc-200 font-semibold">{item.name}</h4>
+                    <h4 className="text-zinc-200 font-semibold">{t(item.nameKey)}</h4>
                     <span className="text-zinc-400 text-sm">{item.date}</span>
                   </div>
-                  <p className="text-zinc-400 text-sm">{item.issuer}</p>
+                  <p className="text-zinc-400 text-sm">{t(item.issuerKey)}</p>
                 </motion.div>
               ))}
             </div>
@@ -113,7 +113,7 @@ export default function Skills() {
                   whileHover={{ x: 5 }}
                   className="flex items-center justify-between p-4 bg-zinc-800/50 rounded-lg border border-zinc-700/50 hover:border-[#007AFF]/30 transition-all duration-300"
                 >
-                  <span className="text-zinc-300 font-medium">{language.name}</span>
+                  <span className="text-zinc-300 font-medium">{t(language.nameKey)}</span>
                   <span className={`px-3 py-1 rounded-full text-xs font-medium bg-gradient-to-r ${getLevelColor(language.level)} text-white`}>
                     {t(`skills.${language.level}`)}
                   </span>
