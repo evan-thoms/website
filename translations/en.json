@@ -41,15 +41,15 @@
     "demo": "Demo",
     "sentinel": {
       "title": "Sentinel",
-      "description": "Agentic vulnerability reporter that scans multilanguage sources for the latest and most critical vulnerabilities and cybersecurity news"
+      "description": "Cybersecurity Intelligence Agent that processes real-time CVE data and security news using LangChain and OpenAI GPT-4. Features multi-language scraping, intelligent classification, and email delivery support."
     },
-    "lumiFlash": {
-      "title": "LumiFlash",
-      "description": "AI-powered flashcard generator using Llama 3.1 LLM with RAG pipeline integration for PDF-based learning."
+    "pinyImage": {
+      "title": "PinyImage",
+      "description": "Create meaningful mental images to remember Mandarin characters forever! AI-powered tool that leverages visual memory to enhance Chinese character memorization."
     },
-    "profAI": {
-      "title": "ProfAI",
-      "description": "Interactive chatbot that scrapes Rate My Professor data to help students make informed course decisions."
+    "languageClassifier": {
+      "title": "Language Classifier",
+      "description": "Neural network-based language classifier that identifies Romance languages and English with 96% accuracy using PyTorch and n-gram analysis."
     }
   },
   "skills": {

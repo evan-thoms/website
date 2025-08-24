@@ -41,15 +41,15 @@
     "demo": "Demo",
     "sentinel": {
       "title": "Sentinel",
-      "description": "Reportero agéntico de vulnerabilidades que escanea fuentes multiidioma en busca de las vulnerabilidades más recientes y críticas y noticias de ciberseguridad"
+      "description": "Agente de Inteligencia de Ciberseguridad que procesa datos de CVE en tiempo real y noticias de seguridad usando LangChain y OpenAI GPT-4. Incluye extracción multiidioma, clasificación inteligente y soporte para entrega por email."
     },
-    "lumiFlash": {
-      "title": "LumiFlash",
-      "description": "Generador de tarjetas de memoria con IA usando Llama 3.1 LLM con integración de pipeline RAG para aprendizaje basado en PDF."
+    "pinyImage": {
+      "title": "PinyImage",
+      "description": "¡Crea imágenes mentales significativas para recordar caracteres mandarines para siempre! Herramienta con IA que aprovecha la memoria visual para mejorar la memorización de caracteres chinos."
     },
-    "profAI": {
-      "title": "ProfAI",
-      "description": "Chatbot interactivo que extrae datos de Rate My Professor para ayudar a los estudiantes a tomar decisiones informadas sobre cursos."
+    "languageClassifier": {
+      "title": "Clasificador de Idiomas",
+      "description": "Clasificador de idiomas basado en redes neuronales que identifica idiomas romances e inglés con 96% de precisión usando PyTorch y análisis n-gram."
     }
   },
   "skills": {

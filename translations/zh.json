@@ -41,15 +41,15 @@
     "demo": "演示",
     "sentinel": {
       "title": "Sentinel",
-      "description": "代理漏洞报告器，扫描多语言源以获取最新和最关键的漏洞和网络安全新闻"
+      "description": "网络安全情报代理，使用LangChain和OpenAI GPT-4处理实时CVE数据和安全新闻。具有多语言抓取、智能分类和电子邮件传递支持功能。"
     },
-    "lumiFlash": {
-      "title": "LumiFlash",
-      "description": "使用 Llama 3.1 LLM 的 AI 驱动闪卡生成器，集成 RAG 管道以实现基于 PDF 的学习。"
+    "pinyImage": {
+      "title": "PinyImage",
+      "description": "创建有意义的心理图像，永远记住汉字！AI驱动的工具，利用视觉记忆来增强中文字符的记忆。"
     },
-    "profAI": {
-      "title": "ProfAI",
-      "description": "交互式聊天机器人，抓取 Rate My Professor 数据以帮助学生做出明智的课程决定。"
+    "languageClassifier": {
+      "title": "语言分类器",
+      "description": "基于神经网络的语言分类器，使用PyTorch和n-gram分析以96%的准确率识别罗曼语和英语。"
     }
   },
   "skills": {
