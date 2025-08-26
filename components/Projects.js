@@ -8,7 +8,7 @@ const projects = [
     descriptionKey: 'projects.sentinel.description',
     techs: ['LangChain', 'OpenAI GPT-4', 'Python', 'Multi-Language'],
     github: 'https://github.com/evan-thoms/vuln_feed',
-    demo: 'https://vuln-feed.vercel.app'
+    demo: 'https://cyber-intelligence-sentinel.vercel.app/'
   },
   // {
   //   titleKey: 'projects.lumiFlash.title',
@@ -29,7 +29,7 @@ const projects = [
     descriptionKey: 'projects.pinyImage.description',
     techs: ['React', 'Cohere AI', 'SQLite', 'Node.js'],
     github: 'https://github.com/evan-thoms/pinyImage',
-    demo: '#'
+    demo: '#  '
   },
   {
     titleKey: 'projects.languageClassifier.title',
