@@ -10,26 +10,12 @@ const projects = [
     github: 'https://github.com/evan-thoms/vuln_feed',
     demo: 'https://cyber-intelligence-sentinel.vercel.app/'
   },
-  // {
-  //   titleKey: 'projects.lumiFlash.title',
-  //   descriptionKey: 'projects.lumiFlash.description',
-  //   techs: ['Next.js', 'Llama 3.1', 'LangChain', 'Pinecone', 'Stripe'],
-  //   github: 'https://github.com/HalaBench/AI-Flashcards-Stripe',
-  //   demo: '#'
-  // },
-  // {
-  //   titleKey: 'projects.profAI.title',
-  //   descriptionKey: 'projects.profAI.description',
-  //   techs: ['Next.js', 'Puppeteer', 'Pinecone', 'Material UI'],
-  //   github: '#',
-  //   demo: '#'
-  // }
   {
     titleKey: 'projects.pinyImage.title',
     descriptionKey: 'projects.pinyImage.description',
     techs: ['React', 'Cohere AI', 'SQLite', 'Node.js'],
     github: 'https://github.com/evan-thoms/pinyImage',
-    demo: '#  '
+    demo: 'https://piny-image.vercel.app/'
   },
   {
     titleKey: 'projects.languageClassifier.title',
