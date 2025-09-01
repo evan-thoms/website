@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Favicon Generator</title>
+</head>
+<body>
+  <canvas id="favicon" width="32" height="32"></canvas>
+  <script>
+    const canvas = document.getElementById('favicon');
+    const ctx = canvas.getContext('2d');
+    
+    // Draw blue circle
+    ctx.beginPath();
+    ctx.arc(16, 16, 14, 0, 2 * Math.PI);
+    ctx.fillStyle = '#007AFF';
+    ctx.fill();
+    
+    // Draw border
+    ctx.strokeStyle = '#0066CC';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    
+    // Convert to PNG and download
+    const link = document.createElement('a');
+    link.download = 'favicon.png';
+    link.href = canvas.toDataURL();
+    link.click();
+  </script>
+</body>
+</html>
